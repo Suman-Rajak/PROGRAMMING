@@ -1,0 +1,86 @@
+							 SUM OF TWO NUMBERS
+							--------------------
+
+--TAKES NOTHING RETURN SOMETHING--
+
+#include<stdio.h>
+#include<conio.h>
+int add();
+void main()
+{
+    int s;
+    s=add();
+    printf("Sum is %d",s);
+    getch();
+}
+int add()
+{
+    int a,b,c;
+    printf("Enter two Numbers: ");
+    scanf("%d%d",&a,&b);
+    c=a+b;
+    return c;
+}
+
+
+--TAKES SOMETHING RETURNS SOMETHING--
+
+#include<stdio.h>
+#include<conio.h>
+int add(int,int);
+void main()
+{
+    int s,x,y;
+    printf("Enter two Numbers: ");
+    scanf("%d%d",&x,&y);
+    s=add(x,y);
+    printf("Sum is %d",s);
+    getch();
+}
+int add(int a,int b)
+{
+    int c;
+    c=a+b;
+    return c;
+}
+
+
+--TAKES SOMETHING RETURNS NOTHING--
+
+#include<stdio.h>
+#include<conio.h>
+void add(int,int);
+void main()
+{
+    int s,x,y;
+    printf("Enter two Numbers: ");
+    scanf("%d%d",&x,&y);
+    add(x,y);
+    getch();
+}
+void add(int a,int b)
+{
+    int c;
+    c=a+b;
+    printf("Sum is %d",c);
+}
+
+
+--TAKES NOTHING RETURNS NOTHING--
+
+#include<stdio.h>
+#include<conio.h>
+void add();
+void main()
+{
+    add();
+    getch();
+}
+void add()
+{
+    int a,b,c;
+    printf("Enter two Numbers: ");
+    scanf("%d%d",&a,&b);
+    c=a+b;
+    printf("Sum is %d",c);
+}

@@ -1,0 +1,16 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+class A
+{
+public:
+    int i;
+    A*operator->(){return this;}
+};
+int main()
+{
+    A a;
+    a->i=10;
+    cout<<a->i<<" "<<a.i;
+    getch();
+}

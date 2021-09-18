@@ -1,0 +1,35 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+class A
+{
+    int X,Y;
+public:
+    A(int a,int b)
+    {
+        X=a;
+        Y=b;
+    }
+    void show()
+    {
+        cout <<X<<" "<<Y<<endl;
+    }
+    A operator,(A);
+};
+A A::oprator,(A,a)
+{
+    return a;
+}
+int main()
+{
+    A a(10,20);
+    a.show();
+    A b(50,100);
+    b.show();
+    //Comma(,)Overload
+    //a=a(a,b);
+    //a.show();
+    a=(a,b);
+    a.show();
+    getch();
+}

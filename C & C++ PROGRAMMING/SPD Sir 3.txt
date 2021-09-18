@@ -1,0 +1,28 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+class Time
+{
+    int h,m;
+public:
+    friend istream & operator>>(istream& input,Time&t)
+    {
+        input>>t.h>>t.m;
+        return input;
+    }
+    friend ostream&operator<<(ostream&output,Time&t)
+    {
+        output<<t.h<<" hour "<<t.m<<" minute "<<endl;
+        return output;
+    }
+};
+int main()
+{
+    Time t1;
+    cout<<"Enter hour and minute: ";
+    cin>>t1;
+    //Overload>>operator
+    cout<<"Given Time is: ";
+    cout<<t1;
+    getch();
+}
