@@ -13,7 +13,6 @@ int main ()
     printf("Enter a number: ");
     scanf("%d",&num);
     printf("%d! = %d",num,fact(num));
-
     return 0;
     getch();
 }

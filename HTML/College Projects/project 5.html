@@ -1,0 +1,57 @@
+<!-- Create a form using HTML which has the following types of controls:
+I. Text Box
+II. Option/radio buttons
+III. Check boxes
+IV. Reset and Submit buttons -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5</title>
+</head>
+
+<body>
+    <form action="form.php">
+        <h2>Subscribe to XYZ News Magazine and Emails</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur debitis eaque incidunt consequuntur!
+            Quaerat laudantium sapiente error dolorum at repellat necessitatibus ipsum deserunt debitis velit
+            voluptatem, odit totam facere molestiae tempora cumque ullam beatae!</p><br><br>
+        <hr>
+
+        <p>Please fill the following boxes to help us send the emails and our news letter:</p>
+        Full Name: <input type="text"><br><br>
+        Last Name: <input type="text"><br><br>
+        Business: <input type="text" size="40">
+        <p>We must have a correct e-mail address to send you the news letter:</p>
+        Email: <input type="email" size="50">
+        <p>How did you hear about XYZ News Magazine and Emails? </p>
+        <label for="Web">
+            <input type="radio" name="Option" id="Web">Here on the Web
+        </label>
+
+        <label for="Magazine">
+            <input type="radio" name="Option" id="Magazine">In a Magazine</label>
+
+        <label for="Television">
+            <input type="radio" name="Option" id="Television">Television
+        </label>
+
+        <label for="Other">
+            <input type="radio" name="Option" id="Other">Other
+        </label>
+        <p>Would you like to be on our regular mailing list</p>
+        <label for="Check">
+            <input type="checkbox" name="Option" id="Check">Yes, I love junk emails
+        </label><br>
+        <hr>
+        <input type="button" value="Reset">
+        <input type="button" value="Send it in">
+    </form>
+
+</body>
+
+</html>

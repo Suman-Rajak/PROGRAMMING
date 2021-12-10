@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Select Your Section</h1>
+        <!-- lets assume the collected data from forms will eb stored in a php file named form.php -->
+        <form action="form.php">
+            <!-- radio button means only one button can be pressed at one time -->
+            <label for="sectionidA">
+                <!-- sectionid is a unique id ... alada alada section id baniye label for na lagale radio button er paser text e  click korle radio button press hobena-->
+                <!-- "for" and "id" should be matched and the "name" of the radio buttons should be same -->
+                <input type="radio" value="section a" name="section" id="sectionidA">Section A
+            </label>
+            <label for="sectionidB">
+                <input type="radio" value="section b" name="section" id="sectionidB">Section B
+            </label>
+            <label for="sectionidC">
+                <input type="radio" value="section b" name="section" id="sectionidC">Section C
+            </label>
+
+        </form>
+    </div>
+</body>
+
+</html>
