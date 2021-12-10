@@ -5,7 +5,7 @@ void main()
     int p;
     printf("Enter a Number\n");
     scanf("%d",&p);
-
+    if(p>1001){}
     if (p>=90 && p<=100)
     {
         printf("Grade Point = 10");
