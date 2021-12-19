@@ -67,8 +67,11 @@ int main()
             }
             else
             {
-                head = head->addr; //head ke ekta node egiye dile prothom node ta delete hoye jabe
+                temp = head;       // head pointer ke temp pointer e store kore dilam
+                head = head->addr; //head pointer ke ek ghor egiye dilam
+                free(temp);        //temp ke free kore deoay first node delete hoye geche
             }
+            break;
         }
         case 4:
         {
@@ -91,6 +94,7 @@ int main()
                 free(runner->addr);  //while loop er baire beriye gele arthat runner er porer porer node er link e null thakle runner er porer node er link arthat runner er porer porer node ke free kore dite hobe
                 runner->addr = NULL; //runner er porer node er link part e null store koriye setike last node baniye dite hobe
             }
+            break;
         }
         case 5:
         {
@@ -103,6 +107,7 @@ int main()
                 runner = runner->addr;
             }
             runner->addr = runner->addr->addr;
+            break;
         }
         case 6:
         {
