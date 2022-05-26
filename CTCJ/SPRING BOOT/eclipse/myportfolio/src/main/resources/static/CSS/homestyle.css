@@ -1,0 +1,27 @@
+.text{
+	padding-left:300px;
+	padding-top:300px;
+	color:white;
+}
+
+.collapse{
+	padding-left:420px;
+}
+
+.btn
+{
+	margin-right:30px;
+	padding-right:20px;
+	color:white;
+	background-color:black; 
+	border-radius:60px;
+}
+
+.btn2{
+	margin-left:300px;
+	color:yellow;
+	background-color:black;
+	border-radius:60px;
+	height:50px;
+	border-color:yellow;
+}

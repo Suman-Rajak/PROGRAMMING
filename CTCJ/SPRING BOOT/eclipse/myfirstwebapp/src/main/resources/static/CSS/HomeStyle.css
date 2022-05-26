@@ -1,0 +1,22 @@
+.bg-dark {
+    background-color: black !important;
+}
+
+body{
+background-color:lightblue;
+}
+
+.card{
+    margin-left:42px;
+    margin-top:38px;
+    background-color:aliceblue;
+}
+
+.navbar{
+	background-color: black;
+}
+
+.btn{
+	color:black;
+	background-color:yellow; 
+}

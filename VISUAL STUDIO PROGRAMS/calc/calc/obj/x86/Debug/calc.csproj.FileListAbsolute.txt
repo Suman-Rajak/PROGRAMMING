@@ -1,0 +1,8 @@
+F:\PROGRAMMING\VISUAL STUDIO PROGRAMS\calc\calc\bin\Debug\calc.exe
+F:\PROGRAMMING\VISUAL STUDIO PROGRAMS\calc\calc\bin\Debug\calc.pdb
+F:\PROGRAMMING\VISUAL STUDIO PROGRAMS\calc\calc\obj\x86\Debug\calc.Form1.resources
+F:\PROGRAMMING\VISUAL STUDIO PROGRAMS\calc\calc\obj\x86\Debug\calc.Properties.Resources.resources
+F:\PROGRAMMING\VISUAL STUDIO PROGRAMS\calc\calc\obj\x86\Debug\calc.csproj.GenerateResource.Cache
+F:\PROGRAMMING\VISUAL STUDIO PROGRAMS\calc\calc\obj\x86\Debug\calc.exe
+F:\PROGRAMMING\VISUAL STUDIO PROGRAMS\calc\calc\obj\x86\Debug\calc.pdb
+F:\PROGRAMMING\VISUAL STUDIO PROGRAMS\calc\calc\obj\x86\Debug\calc.csprojResolveAssemblyReference.cache
