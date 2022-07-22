@@ -559,12 +559,26 @@ cursor: pointer;
     
 }
 .m61,.m62,.m63,.m64,.m65{
-width: 13rem;
-height: 9rem;
+display: flex;
+position: relative;
+width: 11rem;
+flex-direction: column;
+height: 7rem;
+padding-left: 1rem;
+padding-right: 1rem;
+padding-top: 2rem;
 border-radius: .5rem;
 background-color: #fff;
 margin: .5rem;
 box-shadow: 0px 0px 27px -1px rgba(0,0,0,0.29);
 -webkit-box-shadow: 0px 0px 27px -1px rgba(0,0,0,0.29);
 -moz-box-shadow: 0px 0px 27px -1px rgba(0,0,0,0.29);
+}
+.m61 h3,.m62 h3,.m63 h3,.m64 h3,.m65 h3 {
+    font-size: 1.1rem;
+}
+.m61 img,.m62 img,.m63 img,.m64 img,.m65 img {
+    width:1.7rem;
+    position: absolute;
+    margin-top: -2.8rem;
 }
