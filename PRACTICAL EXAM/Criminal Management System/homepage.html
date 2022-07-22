@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            height: 3.5rem;
+            background-color: rgba(20, 36, 218, 0.5);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #navdiv {
+            width: 50rem;
+            display: flex;
+            /* flex-direction: row; */
+            /* justify-content: right; */
+            justify-content: space-evenly;
+        }
+
+        #navdivv {
+            /* width: 100%; */
+            height: 1rem;
+            width: 35rem;
+            /* background-color: black; */
+        }
+
+        #middle {
+            margin-top: 2rem;
+            height: 40rem;
+            background-image: linear-gradient(to left, white, rgb(87, 71, 190));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+      
+
+        #inner {
+            height: 20rem;
+            width: 20rem;
+            background-color: rgba(79, 27, 222, 0.5);
+            margin-right: 5rem;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #title {
+
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        #innerdiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #dash{
+            color: aliceblue;
+            font-size: 2rem;
+            bottom: 7rem;
+            position: relative;
+        }
+        
+
+        /* ion-icon {
+            width: 10rem;
+            height: 10rem;
+            position: relative;
+        } */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div id="navdivv"></div>
+        <div id="navdiv">
+            <h3>HOME</h3>
+            <H3>ABOUT</H3>
+            <H3>CONTACT</H3>
+            <H3>T&C</H3>
+        </div>
+    </nav>
+
+    <div id="middle">
+        <div id="title">WELCOME TO MY PROJECT</div>
+        <div id="innerdiv">
+            <div id="inner">
+                <!-- <ion-icon name="bus">ICON</ion-icon> -->
+                <h1 id="dash">Go to The Dashboard</h1>
+            </div>
+            <div id="inner"></div>
+            <div id="inner"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

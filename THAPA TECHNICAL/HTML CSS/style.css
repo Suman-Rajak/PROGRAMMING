@@ -1,0 +1,192 @@
+/* *{
+    /* It is the global operator */
+    margin: 0;
+    padding: 0;
+} */
+#firsth2  
+/* ID is Selected using hastag (#) */
+{
+    color:green;
+}
+
+.firsth2
+/* Class is Selected using dot (.) */
+{
+    color: yellowgreen;
+}
+
+.backimage{
+    width: 100%;
+    height: 100vh;
+    /* background-color: green; */
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');
+    background-repeat: no-repeat ;
+    /* background-repeat: repeat-x; Horizontal Repeat */
+    /* background-repeat: repeat-y; Vertical Repeat */
+    background-size: 100% 100%; /*Perfect Center*/
+    background-attachment: fixed;
+
+}
+.backimage1{
+    width: 100%;
+    height: 100vh;
+    /* background-color: green; */
+    background-image: url('https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-repeat: no-repeat ;
+    /* background-repeat: repeat-x; Horizontal Repeat */
+    /* background-repeat: repeat-y; Vertical Repeat */
+    background-size: 100% 100%; /*Perfect Center*/
+    background-attachment: fixed;
+
+}
+#googlefont{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-variant: small-caps;
+    font-size: 3em;
+    /* 1em = 16px */
+    font-style: italic;
+    font-weight: bold;    
+}
+
+#textcss{
+    color:red;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    direction: ltr;
+    text-indent: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color:yellow;
+}
+a:active{
+    color: blue;
+}
+
+.borderbox{
+  width: 500px;
+  height: 300px;
+  background-color: yellow;
+  /* border-width: 10px;
+  border-color: black;
+  border-style:solid; */
+  border : 10px solid blue;
+  border-radius: 100px;
+  
+}
+
+ul{
+    list-style-type : disc;
+}
+ol{
+    list-style-type: lower-roman;
+}
+
+.boxmodel
+{
+    width: 400px;
+    height: 200px;
+    background-color: aqua;
+    
+}
+input{
+    /* padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    /* padding: 5px 5px 5px 5px ; */
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+#dummyp{
+    width: 200px;
+    height: 100px;
+    border: 3px solid blue;
+    /* overflow: auto; */
+    /* overflow: hidden; */
+    overflow:scroll;
+}
+
+.father
+{
+    width: 600px;
+    height:300px;
+    color: aliceblue;
+    background-color: rgb(103, 8, 103);
+    position: relative;
+}
+.child1{
+    width: 100px;
+    height: 60px;
+    background-color: orange;
+    position: absolute;
+    /* left: 0; */
+}
+
+.child2{
+    width: 100px;
+    height: 60px;
+    background-color: green;
+    position: absolute;
+    /* right: 0; */
+}
+
+.child3{
+    width: 100px;
+    height: 60px;
+    background-color:cadetblue;
+    position: absolute;
+    /* bottom: 0; */
+    z-index: 1;
+    
+}
+
+.child4{
+    width: 100px;
+    height: 60px;
+    background-color:brown;
+    position: absolute;
+    /* bottom: 0;
+    right: 0; */
+}
+
+.header
+{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.logo
+{
+    width: 30%;
+    line-height: 50px;
+    text-align: center;
+    background-color: orange;
+    float: left;
+}
+.menu{
+    width: 70%;
+    background-color: red;
+    height: 50px;
+    float: right;
+}
+
+.unordered
+{
+    list-style: none;
+    text-align: right;
+}
+
+li{
+    display:inline-block;
+    /* border: 1px solid black; */
+    padding: 0 10px ;
+}

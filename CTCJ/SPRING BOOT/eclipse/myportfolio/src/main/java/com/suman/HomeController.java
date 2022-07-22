@@ -13,9 +13,5 @@ public class HomeController {
 		return "homepage";
 	}
 	
-	@RequestMapping("/contact")
-	public void contactpage() {
-		System.out.println("Contact Us Page Called");
-	}
 }
 
