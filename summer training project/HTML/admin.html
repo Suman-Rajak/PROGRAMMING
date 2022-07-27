@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* *{
+    margin: 2rem;
+} */
+body {
+    /* background-image: url(../IMAGES/bg-01.jpg); */
+    background-image: linear-gradient(to left,teal,yellow,teal);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#p {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#fields {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 35rem;
+    background-color:#000;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 2px 25px 0px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: -1px 2px 25px 0px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: -1px 2px 25px 0px rgba(0, 0, 0, 0.66);
+}
+
+#heading{
+    /* margin-top: rem; */
+    letter-spacing: 0.5rem;
+
+}
+
+#input input {
+    width: 15rem;
+    height: 0.2rem;
+    margin: 1rem;
+    padding: 1rem;
+    outline: none;
+    border: 3px solid rgb(141, 211, 255);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    background-color: transparent;
+    color: #fff;
+}
+#forgot{
+    margin-right: -14rem;
+    margin-top: -2.6rem;
+}
+#btn
+{
+    width: 8rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    /* height: 1.8rem; */
+    border-radius: 1rem;
+    border: none;
+    background-image: linear-gradient(to right , rgb(239, 250, 79),rgb(108, 239, 249));
+    color: #000;
+    margin-top: -1.7rem;
+}
+#btn:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to left , rgb(239, 250, 79),rgb(108, 239, 249));
+    color: #000;
+}
+
+#input ion-icon{
+   /* color: rgb(141, 211, 255); */
+   color: yellow;
+}
+iframe{
+    filter: contrast(150%);
+}
+#fields{
+    color: rgb(111, 227, 239);
+}
+    </style>
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="p">
+        
+            <div id="fields">
+                <h2 id="heading">ADMIN LOGIN</h2><br>
+                <iframe src="https://giphy.com/embed/EmkBfdGYTCwmXMnf3A" width="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <div id="input">
+                    <p>
+                        <ion-icon name="mail"></ion-icon><input type="text" placeholder="Enter Your Email" required>
+                    </p>
+                    <p>
+                        <ion-icon name="lock-closed"></ion-icon><input type="password" name="" id=""
+                            placeholder="Enter Your Password" required>
+                    </p>
+                </div>
+                <p><a href="#" style="text-decoration:none; color: rgb(138, 249, 249);">
+                        <h4 id="forgot">Forgot Password?</h4>
+                    </a></p>
+                    <input type="submit" value="LOGIN" id="btn">
+            </div>
+            
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
