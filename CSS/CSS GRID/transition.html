@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 455px;
+        }
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+            /* transform: translate(134px,56px) rotate(25deg);
+            transform-origin: 0;  */
+            /* Specifies -> kon jayga theke transform hobe. */
+            /* transform: scaleX (2); */
+            /* transform: skew(2deg,60deg); */
+            transform: translate(144px,57px);
+        }
+        img{
+            width: 755px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in; 
+            /* Ease in -> Prothome Slow tarpor fast */
+        }
+
+        /* img:hover{
+            width: 56px;
+        } */
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box"><img id="image"src="https://source.unsplash.com/260x120/?nature,water" alt="">
+                <button id="btn">Change Size</button></div>
+        </div>
+        <script>
+            btn.addEventListener("click",()=>{
+                image.style.width="250px";
+            })
+        </script>
+</body>
+</html>

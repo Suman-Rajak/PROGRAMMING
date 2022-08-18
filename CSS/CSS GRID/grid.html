@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            height: 30vh;
+            background-color: yellow;
+            grid-row-gap: 9px;  /* gap between rows */
+            grid-column-gap: 9px;  /* gap between columns */
+            grid-template-columns: auto auto auto auto;  
+            /* speifies the width of columns ... here 4 auto means there will be 4 columns in a row */
+            /* grid-template-rows: 100px 50px;  speifies the height of rows */
+            /* grid-gap: 9px 9px;  1st one is row and second one is column
+            single value means both row and column*/
+        }
+        .item{
+            background-color:aqua;
+            border: 2px solid red;
+        }
+        .item1{
+            background-color:aqua;
+            border: 2px solid red;
+            grid-column: 1/3;  
+            /* grid-row: 1/3; */
+            /* '1' means it will start from 1st line and '3' means it will end in 3rd line. When grid-column then it will expand column wise and in row it will expand row wise.*/
+            grid-row: 1/ span 2; 
+            /* It will take place of 2 lines */
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+
+        </div>
+</body>
+</html>
