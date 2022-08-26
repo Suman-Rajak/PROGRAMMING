@@ -77,3 +77,6 @@ var funExp = function (m, n) {
 
 var sum3 = funExp(35, 45);
 console.log("Total Sum = "+sum3);
+
+
+//DRY => Do NOt Repeat Yourself//
