@@ -2,7 +2,7 @@
 
 float trapezoidal (float x)
 {
-    return x*x*x;
+    return (x*x*x);
 }
 
 int main()
@@ -21,7 +21,7 @@ int main()
     for (i = 0; i <= n; i++)
     {
         y[i] = trapezoidal(x);
-        printf("\n--%d-- Value of X = %.3lf \t Value of Y = %.3lf",i,x,y[i]);
+        printf("\n%d \t Value of X = %.3lf \t Value of Y = %.3lf",i,x,y[i]);
         x+=h;
     }
     s1=0;
