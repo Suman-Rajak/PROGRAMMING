@@ -280,3 +280,215 @@ console.log(plants1);
 console.log("\nAfter Shift");
 console.log("Removed Element is :- "+plants1.shift()); //Removes last element of the array
 console.log(plants1);
+
+
+
+//splice()//
+
+console.log("\n\nUsing Splice Examples\n");
+//Syntax - const 'variablename' = 'arrayname'.splice ('kon index e kaj hobe setarindex number','delete korte chaile 1 nahole 0' , 'kichu add korte chaile seta')
+//Adds and/or removes elements from an array.
+
+const month = ['Jan','March','April','June','July'];
+
+//Q-1 ---> Add Dec at the end of the list---//
+console.log("\nAdd Dec at the end of the list");
+
+const newmonth = month.splice(5,0,"Dec"); 
+/*In place of "5" we can write "arrayname.length" for insertion or deletion at the length */
+console.log(month);
+
+
+//splice() returns array because it is used for deletion...the elements deleted are shown in the array. If no elements are deleted then it returns an empty array. 
+
+
+//Q-2 ---> Update March to November---//
+console.log("\nUpdate March to November");
+const updatemonth = month.splice(1,1,"November"); 
+/*First 1 --> Index 1
+  Second 1 --> Because I want to delete
+  "November" --> After deletion new string to be entered
+*/
+console.log(month);
+
+
+//Q-3 ---> Update by Finding Index Number
+
+console.log("\nUpdate June to May by finding the index number");
+
+const indexOfMonth = month.indexOf("June");
+if(indexOfMonth != -1)
+{
+    const updatemonth2 = month.splice(indexOfMonth,1,"May"); 
+    console.log(month);
+}
+else{
+    console.log("No Such Data Found");
+}
+
+
+//Q-4 ---> Delete "May"
+
+console.log("\nDelete May");
+
+const indexOfMonth1 = month.indexOf("May");
+if(indexOfMonth1 != -1)
+{
+    const deleteMonth = month.splice(indexOfMonth1,1); 
+    console.log(month);
+}
+else{
+    console.log("No Such Data Found");
+}
+
+
+//Q-5 ---> Delete More than one element
+console.log("\nDelete all elements after April");
+const indexOfMonth2 = month.indexOf("April");
+if(indexOfMonth2 != -1)
+{
+    const deleteMonthmorethanone = month.splice(indexOfMonth2,Infinity); 
+    //It will delete every element after "April"
+    console.log(month);
+}
+else{
+    console.log("No Such Data Found");
+}
+
+
+
+
+
+//Map()
+
+/*  let newArray = arr.map (callback(currentValue[, index [, array]]){
+    //return element for newArray, after executing something
+    }[, thisArg]);
+ */
+
+    //Returns a new array containing the results of calling a function on every element in this array 
+
+
+const arrayA = [1,4,9,16,25];
+
+//Q-1 ---> Num > 9 (Show only boolean values)
+/* 
+
+let newArr = arrayA.map((curElem, index, arr) => {
+    return curElem > 9;
+})
+console.log("\nOld Array");
+console.log(arrayA);
+
+console.log("\nNew Array");
+console.log(newArr); 
+
+*/
+
+console.log("\nusing map() method\n");
+
+//Q-1 ---> Num > 9 (Show all data)
+
+let newArr = arrayA.map((curElm, index, arr) => {
+    return `Index no = ${index} and the value is ${curElm} belong to ${arr}`
+})
+
+console.log(newArr);
+
+
+// *** It returns a new array without mutating the original array *** //
+
+/* ---DIFFERENCE BETWEEN MAP() AND FOREACH() --- */
+
+/*
+    (1) The Returning Value :- The foreach() returns "undefined" and 
+                               map() returns a new array with transformed elements
+
+    (2) Ability to chain other methods :- The map() method is chainable. 
+                                          This means we can attach "reduce()", "sort()", "filter()" and so on after performing map() method.
+
+                                            
+                                          We can't do this with forEach().
+    
+*/
+
+// Q-1 ---> Find the square root of each element in an array
+
+console.log("\nFind the square root of each element in an array");
+
+let arrA = [25,36,49,64,81]
+
+let arrSqr = arrA.map((curElem) => {
+    return Math.sqrt(curElem);
+})
+
+console.log(arrSqr);
+
+
+// Q-2 ---> Multiply Each element with 2 and return only those elements which are greater than 10
+
+console.log("\nMultiply Each element with 2 and return only those elements which are greater than 10");
+
+let arrB = [2,3,4,6,8];
+
+let arrMul = arrB.map((curElem) => {
+    return curElem*2 ;
+}).filter((curElem) => {
+    return curElem > 10;
+})
+
+console.log(arrMul);
+
+
+
+//reduce()//
+
+// flatten an array means to convert the 3D or 2D array into a 1D array //
+
+//It id used when we want to return a single value in case of "Sum", "Average", "Percentage" etc...
+
+/* The reduce() method executes a reducer function (that we provide) on each element of the array, resulting in single output value.
+
+The reducer function takes four arguments:- 
+    1. Accumulator
+    2. Current Value
+    3. Current Index
+    4. Source Array
+
+*/
+
+console.log("\nusing reduce() method");
+
+let arrC = [5,6,2];
+
+let arrSum = arrC.reduce((accumulator, curElem, index, arr) => {
+        return accumulator += curElem;
+}, 7 ) //It is Initial Value...7 is already stored in accumulator. While summing, 7 will be automatically added with 5,6,2. 
+
+console.log(arrSum);
+
+
+
+
+
+//How to flatten an array (Converting 2D and 3D array into 1D array)
+
+console.log("\nArray before flatten");
+const arr5 = [
+    ['zone1','zone2'],
+    ['zone3','zone4'],
+    ['zone5','zone6'],
+    ['zone7','zone8']
+];
+console.log(arr5);
+
+console.log("\nArray after flatten");
+
+let flatarr = arr5.reduce((accum,currVal) => {
+    return accum.concat(currVal);
+})
+
+console.log(flatarr);
+
+//This will not work for nested arrays.
+//For nested arrays there is a new function in ECMA Script 2020.
