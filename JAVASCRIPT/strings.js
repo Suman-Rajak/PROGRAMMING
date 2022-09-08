@@ -169,6 +169,8 @@ console.log("\n***Slice Method***");
 var str = "Apple, Banana, Kiwi";
 console.log(`Original String :- ${str}`);
 
+//---> Example - 1
+
 let res = str.slice(0, 5);
 //Start from A and end in the blankspace after Apple...as 'end is not included' so it will return "Apple" only.
 console.log(`After Slicing from 0 to 5 :- ${res}`);
