@@ -15,7 +15,7 @@
 
 
 
-// --- HOW TO CREATE STRINGS --- //
+                    // --- HOW TO CREATE STRINGS --- //
 
 // (1) using double quotes
 let myname = "Suman Rajak";
@@ -30,7 +30,7 @@ let myname2 = new String("Suman Rajak 2");
 
 
 
-// --- LENGTH OF STRING --- //
+                        // --- LENGTH OF STRING --- //
 
 // String.length ---> It returns the length of the string (It includes the whitespace or space)
 
@@ -46,7 +46,7 @@ console.log(`Length of the String is:- ${myname.length}`);
 
 
 
-//---Escape Character---//
+                                //---Escape Character---//
 
 //It is used to use double or single quotes inside a string.
 //Syntax ---> "String \"Double quoted String\" ";
@@ -70,9 +70,10 @@ console.log(sentence);
 
 
 
-//---Finding a String in a String---//
+                        //---Finding a String in a String---//
 
-//___IndexOf()___//
+                                //___IndexOf()___//
+
 
 // String.prototype.indexOf(searchvalue [, fromIndex]).
 
@@ -98,7 +99,7 @@ console.log('(Using indexOf) The Position of the String "am" is:-'
 
 
 
-//___lastIndexOf()___//
+                            //___lastIndexOf()___//
 
 // All Same The main difference with "indexOf()" is that indexOf() does forward searching and "lastIndexOf()" does backward searching.
 
@@ -107,9 +108,9 @@ console.log('(Using indexOf) The Position of the String "am" is:-'
 
 
 
-//---Searching a String in a String---//
+                    //---Searching a String in a String---//
 
-// Search() //
+                                // Search() //
 
 //The seacrh() method searches a string for a specified value and returns the position of the match
 //The search() method cannot take a second start position argument
@@ -124,7 +125,10 @@ console.log(`Original String :- ${mybio}`);
 console.log("Searched Data ('am'):- " + mybio.search("am"));
 
 
-//---Difference between search() and indexof()---//
+
+
+
+                //---Difference between search() and indexof()---//
 
 /* 
    (1) indexof() can have second argument which denotes    from where to start finding.
@@ -140,10 +144,10 @@ console.log("Searched Data ('am'):- " + mybio.search("am"));
 
 
 
-//---Extracting Strings Parts---//
+                        //---Extracting Strings Parts---//
 
 /*
-    There are 3 methods for extracting a part of a string:
+    There are 3 methods for extracting a part of a string:  
 
     (1) slice (start,end)
     (2) substring (start,end)
@@ -155,7 +159,8 @@ console.log("\n---Extracting String Parts---");
 
 
 
-//---slice()---//
+
+                                //---slice()---//
 
 // slice() extracts a part of a string and returns teh extracted part in a new string.
 // It takes 2 parameters: the start position and the end position (end not included)
@@ -176,4 +181,30 @@ let res = str.slice(0, 5);
 console.log(`After Slicing from 0 to 5 :- ${res}`);
 
 
+//---> Example - 2
 
+let res1  = str.slice(7,-2);
+//Start from 7 i.e. from 'Banana' and end at 'last-2' i.e. in 'Ki'.
+//Negative Value ---> Last theke toto gulo value bad debe
+
+console.log(`After Slicing from 7 to -2 :- ${res1}`);
+
+
+//---> Example - 3
+
+let res2 = str.slice(7);
+//Start from 7 and end in the end of string because the end is not specified.
+
+console.log(`After Slicing from 7 :- ${res2}`);
+
+
+
+
+
+ //---Display only 280 characters of a string like the one used in Twitter---//
+
+let mytweet = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." 
+console.log(`\nOriginal String is :- \n${mytweet}`);
+console.log(`\nlength of mytweet is :- ${mytweet.length}`);
+
+console.log(`\nPrinting only 280 characters :- \n${mytweet.slice(0,280)}`);
