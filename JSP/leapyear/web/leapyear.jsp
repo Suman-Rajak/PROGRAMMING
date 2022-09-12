@@ -60,7 +60,6 @@
                         <!--<input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">-->
                     </div>
                     <div class="col-auto">
-                        <label for="inputPassword2" class="visually-hidden">Password</label>
                         <input type="number" name="year" class="form-control" id="inputPassword2" placeholder="Year" required="required">
                     </div>
                     <div class="col-auto">
