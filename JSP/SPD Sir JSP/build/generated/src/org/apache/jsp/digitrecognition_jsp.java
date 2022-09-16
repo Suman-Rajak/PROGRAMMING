@@ -48,7 +48,7 @@ public final class digitrecognition_jsp extends org.apache.jasper.runtime.HttpJs
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>Leap Year</title>\n");
+      out.write("        <title>Digit Recognition</title>\n");
       out.write("        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\">\n");
       out.write("        <style>\n");
       out.write("            .p{\n");
@@ -158,7 +158,7 @@ public final class digitrecognition_jsp extends org.apache.jasper.runtime.HttpJs
        break;}
        default:
        {
-       out.println("<h4>Enter Numbers between 0 - 9");
+       out.println("<h4>!!!Enter Numbers between 0 - 9");
                     }
        }
    }

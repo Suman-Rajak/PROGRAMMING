@@ -10,70 +10,80 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Fibonacci</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <style>
-            
+
             .parent{
                 min-height: 100vh;
                 display: flex;
                 flex-direction: column;
                 /*justify-content: center;*/
                 align-items: center;
-                
-                
+
+
             }
             .tablebox{
                 width:80%;
                 display:flex;
                 justify-content: center;
-                align-items: center; 
+                align-items: center;
             }
-            h2{
-                background-color: yellow;
-                /*width: 6rem;*/
+            h1{
+                text-align: center;
+                font-family:sans-serif;
+                margin: 1rem;
+                padding: 1rem;
+                color: blue;
             }
-            
+            table{
+                table-layout: fixed;
+                width:8rem;
+                text-align: center;
+            }
+
+
         </style>
     </head>
     <body>
         <% int a=0,b=1,c,i,count=0; %>
         <h1 class="text-center m-3 p-3 text-primary">Fibonacci Series</h1>
         <div class="parent">
-        <div class="tablebox">
-        <table class="table text-center mt-3 w-25">
-
-  <tbody>
-    <tr>
-      <td>
-          <%
-              out.println(a + "<br>");
-              out.println(b + "<br>");
+            <div class="tablebox">
+                <table border="1" cellpadding="3" >
+                    <tbody>
+                        <%
+                            for(i=0;i<20;i++)
+                            {
+                            if(i==0)
+                            { %>
+                        <tr>
+                            <td><%out.println("0"+"<br>");%></td>
+                        </tr>
+                        <%
+                             count = 1;}
+                             else if(i==1)
+                             { %>
+                        <tr><td><%out.println("1"+"<br>");%></td></tr>
+                        <%
+                            count =2;}
+                        else{
+                            c = a+b;
+                            a=b;
+                            b=c;
+                            count++;%>
+                        <tr>
+                            <td><%out.println(c + "<br>");%></td>
+                        </tr>
+                        <%}
               
-              count = 2;
-                for(i=2;i<20;i++)
-              {
-              c = a+b;
-              a=b;
-              b=c;
-              count++;
-              out.println(c + "<br>");
-              
-              if(count%5==0)
-              {
-             out.println("<h2><br /></h2>");
-          }
-          }
-
-%>
-      </td>
-    </tr>
-
-  </tbody>
-</table>
+                        if(count%5==0 && count!=20)
+                        {%>
+                        <tr><td bgcolor="yellow"><%out.println("<br />");%></td></tr>
+                            <%}
+                            }
+                            %>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        </div>
-        
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

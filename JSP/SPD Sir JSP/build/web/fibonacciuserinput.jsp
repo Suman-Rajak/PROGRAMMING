@@ -35,7 +35,7 @@
                 color: blue;
             }
             table{
-                table-layout: fixed;
+                table-layout: auto;
                 width:8rem;
                 text-align: center;
             }
@@ -47,11 +47,22 @@
         <% int a=0,b=1,c,i,count=0; %>
         <h1 class="text-center m-3 p-3 text-primary">Fibonacci Series</h1>
         <div class="parent">
+
+            <form method="post">
+                <input type="number" placeholder="Enter No of Terms" name="term">
+                <button type="submit">Generate</button> 
+            </form> <br>
             <div class="tablebox">
                 <table border="1" cellpadding="3" >
                     <tbody>
                         <%
-                            for(i=0;i<20;i++)
+                            if(request.getMethod().equals("POST"))
+                            {
+                            int n;
+                            n = Integer.parseInt(request.getParameter("term"));
+                           
+       
+                            for(i=0;i<n;i++)
                             {
                             if(i==0)
                             { %>
@@ -75,12 +86,12 @@
                         </tr>
                         <%}
               
-                        if(count%5==0 && count!=20)
+                        if(count%5==0 && count!=n)
                         {%>
                         <tr><td bgcolor="yellow"><%out.println("<br />");%></td></tr>
                             <%}
                             }
-                            %>
+}%>
                     </tbody>
                 </table>
             </div>
