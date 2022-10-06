@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(28, 23, 91);
+            color: yellow;
+        }
+
+        .event {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .first,
+        .second,
+        .third,
+        .fourth {
+            padding: 1.5rem;
+            background-color: grey;
+            color: yellow;
+            cursor: pointer;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        #mypara {
+            font-size: 1.3rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        #box {
+            min-width: 3rem;
+            min-height: 3rem;
+            background-color: #fff;
+            cursor: pointer;
+
+        }
+        #key{
+            width: 15rem;
+            height: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Events -->
+    <div class="event">
+        <h1>Different Events in Javascript</h1>
+
+        <button class="first" onclick="alert('I am Using Alert')">Using Alert</button>
+
+        <button class="second" onclick="callingfunction()">Using Function</button>
+
+        <button class="third">Inline Event</button>
+
+        <button class="fourth">Event Listeners</button>
+    </div>
+
+
+
+
+
+    <!-- Mouse Events -->
+
+    <div class="event">
+        <h1>Mouse Events</h1>
+        <p id="mypara" onmousedown="mouseDown()" onmouseup="mouseUp()">
+            click kore thakle colour hobe yellow abnd click chere dile colour hobe red
+        </p>
+
+        <div id="box">
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- Keyboard Events -->
+
+<div class="event">
+    <h1>Keyboard Events</h1>
+    <input type="text" name="" id="key" onkeypress="keypress()" onkeydown="keyDown()" onkeyup="keyUp()">
+    <p id="keydes"></p>
+</div>
+
+
+
+    <!-- Input Events -->
+
+    <div class="event">
+        <h1>Input Events</h1>
+
+        <label for="">Enter Your Name:- </label>
+        <input type="text" name="" id="ice">
+
+        <label for="">Choose Your icecream flavour
+            <select name="" id="" id="icecream">
+                <option value="">Select One</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Butter Scotch">Butter Scotch</option>
+            </select>
+        </label>
+
+        <div id="result">css</div>
+    </div>
+
+    <script src="events.js"></script>
+
+</body>
+
+</html>

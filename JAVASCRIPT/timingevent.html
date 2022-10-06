@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(28, 23, 91);
+            color: yellow;
+        }
+
+        .tevent {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #tbtn, #start, #stop{
+            width:7rem;
+            height: 2rem;
+            background-color: yellow;
+            color: black;
+            cursor: pointer;
+        }
+
+        #txt{
+            font-size: 1.2rem;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        
+        </style>
+</head>
+<body>
+    <div class="tevent">
+        <h1>Using Set Timeout</h1>
+
+        <h2>Want to know my Name?</h2>
+        <button id="tbtn">Click Here</button>
+        <h3 id="txt"></h3>
+    </div>
+
+
+    <div class="tevent">
+        <h1>Can you stop me whenever I reach at 5?</h1>
+       
+        <button id="start">  Click To Start</button>
+        <button id="stop">Click to Stop</button>
+
+        <h2 id="text">Countdown Shows Here...</h2>
+    </div>
+
+    <script src="./timingevent.js"></script>
+    <script>
+        const start = document.getElementById('start');
+        const stop = document.getElementById('stop');
+        const text = document.getElementById('text');
+        let num=0;
+        let timeref;
+
+        const show1 = () => {
+            text.innerHTML = "Loading.....";
+
+            timeref = setInterval(() => {
+                text.innerHTML = `${num}`;
+                num++;
+            },500);
+        }
+        start.addEventListener('click',show1);
+
+        stop.addEventListener('click', () => {
+            clearInterval(timeref);
+        });
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

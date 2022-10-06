@@ -71,6 +71,12 @@ public final class fibonacci_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                font-family:sans-serif;\n");
       out.write("                margin: 1rem;\n");
       out.write("                padding: 1rem;\n");
+      out.write("                color: blue;\n");
+      out.write("            }\n");
+      out.write("            table{\n");
+      out.write("                table-layout: fixed;\n");
+      out.write("                width:8rem;\n");
+      out.write("                text-align: center;\n");
       out.write("            }\n");
       out.write("\n");
       out.write("\n");
@@ -83,7 +89,7 @@ public final class fibonacci_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <h1 class=\"text-center m-3 p-3 text-primary\">Fibonacci Series</h1>\n");
       out.write("        <div class=\"parent\">\n");
       out.write("            <div class=\"tablebox\">\n");
-      out.write("                <table border=\"1\" cellpadding=\"3\">\n");
+      out.write("                <table border=\"1\" cellpadding=\"3\" >\n");
       out.write("                    <tbody>\n");
       out.write("                        ");
 

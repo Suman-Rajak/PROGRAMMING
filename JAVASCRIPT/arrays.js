@@ -71,14 +71,14 @@ console.log("\nUsing For Each Fat Arrow");
 arr.forEach((element, index, array) =>  //callback functions 
 {
 
-    console.log(element + " Index :- "+index+ " "+array); //Will give values of all elements in the array.
-    
+    console.log(element + " Index :- " + index + " " + array); //Will give values of all elements in the array.
+
     //forwach is a combination of for in and for of.
 });
 
 
 
-                    //---SEARCHING AND FILTER IN AN ARRAY---//
+//---SEARCHING AND FILTER IN AN ARRAY---//
 
 
 
@@ -89,7 +89,7 @@ arr.forEach((element, index, array) =>  //callback functions
 console.log("\nUsing Index Of");
 
 console.log(arr.indexOf("suman")); //Will Return the Index of that element.
-console.log(arr.indexOf(true,2)); //Now searching will start from 2 index.
+console.log(arr.indexOf(true, 2)); //Now searching will start from 2 index.
 //If nothing is matched then it returns "-1";
 //It is case sensitive.
 
@@ -105,7 +105,7 @@ console.log(arr.indexOf(true,2)); //Now searching will start from 2 index.
 console.log("\nUsing Last Index Of");
 
 console.log(arr.lastIndexOf("suman")); //It searches from backward.
-console.log(arr.lastIndexOf(true,2)); 
+console.log(arr.lastIndexOf(true, 2));
 
 
 
@@ -117,7 +117,7 @@ console.log(arr.lastIndexOf(true,2));
 //Determines whether the array contains a value returning true or false as appropiate.
 console.log("\nUsing Includes");
 console.log(arr.includes("suman")); //Returns true because suman is included in the array
-console.log(arr.includes("suman",2)); //Returns false because "suman" is present in index 1 but we are starting our serach from index 2.
+console.log(arr.includes("suman", 2)); //Returns false because "suman" is present in index 1 but we are starting our serach from index 2.
 
 
 
@@ -132,12 +132,12 @@ console.log(arr.includes("suman",2)); //Returns false because "suman" is present
 
 console.log("\nUsing Find");
 
-const prices = [200,300,350,400,500,600];
+const prices = [200, 300, 350, 400, 500, 600];
 
 //price<400
 
 const findelem = prices.find((currVal) => {
-    return currVal<400; //Returns the prices which are less than 400
+    return currVal < 400; //Returns the prices which are less than 400
 });
 
 console.log(findelem); //Returns only 200...it returns only one value (first satisfied value).
@@ -156,7 +156,7 @@ console.log(findelem); //Returns only 200...it returns only one value (first sat
 console.log("\nUsing FindIndex");
 
 const findelem1 = prices.findIndex((currVal) => {
-    return currVal<400; //Returns the prices which are less than 400
+    return currVal < 400; //Returns the prices which are less than 400
 });
 
 console.log(findelem1); //Returns 0 ...index of the satisfied value i.e. index of "200".
@@ -175,8 +175,8 @@ console.log("\nUsing Filter");
 
 //Price < 400
 
-const newPrice =  prices.filter((elem, index) => {
-    return elem<400;
+const newPrice = prices.filter((elem, index) => {
+    return elem < 400;
 })
 
 console.log(newPrice);
@@ -186,7 +186,7 @@ console.log(newPrice);
 
 
 
-                        //---SORT AND COMPARE AN ARRAY---//
+//---SORT AND COMPARE AN ARRAY---//
 
 
 //sort()
@@ -195,8 +195,8 @@ console.log(newPrice);
 
 console.log("\nUsing Sort");
 
-const months = ['April','March' , 'Jan' , 'Feb' , 'Dec', 'Nov']
-const numbers = [1,30,4,21,10000,99]
+const months = ['April', 'March', 'Jan', 'Feb', 'Dec', 'Nov']
+const numbers = [1, 30, 4, 21, 10000, 99]
 
 console.log(months.sort()); //Sorts the array in alphabetic order
 console.log(numbers.sort()); //Sorts the array in ascending order
@@ -208,7 +208,7 @@ console.log(numbers.sort()); //Sorts the array in ascending order
 
 
 
-        //---INSERT ADD REPLACE AND DELETE (CRUD) ELEMENT IN ARRAY---//
+//---INSERT ADD REPLACE AND DELETE (CRUD) ELEMENT IN ARRAY---//
 console.log("\n\nCRUD\n");
 
 
@@ -217,7 +217,7 @@ console.log("\n\nCRUD\n");
 //The push() method adds one or more elements to the end of an array and returns the new length of the array
 
 console.log("\nBefore Push");
-const animals = ['pigs' , 'goats' , 'sheep'];
+const animals = ['pigs', 'goats', 'sheep'];
 console.log(animals);
 
 console.log("\nAfter Push");
@@ -227,10 +227,10 @@ console.log(animals);
 console.log("\nAfter another push");
 const count = animals.push("cow");
 console.log(animals);
-console.log("\nLength = "+count); //Returns the length of array
+console.log("\nLength = " + count); //Returns the length of array
 
 console.log("\nPushing Multiple Element at a time");
-animals.push("dog","cat","bird");
+animals.push("dog", "cat", "bird");
 console.log(animals);
 
 //Push method returns the new length of the array
@@ -243,7 +243,7 @@ console.log(animals);
 //The unshift method adds one or more elements to the beginning of an array and returns the new length of the array
 
 console.log("\nBefore Unshift");
-const animal1=['pigs','goats','sheep'];
+const animal1 = ['pigs', 'goats', 'sheep'];
 console.log(animal1);
 
 console.log("\nAfter unshift");
@@ -258,12 +258,12 @@ console.log(animal1);
 //the pop() method removes the last element from an array and returns that element. This method changes the length of the array
 
 console.log("\nBefore Pop");
-const plants = ['cauliflower' , 'kale' , 'tomato' , 'cabbage']
+const plants = ['cauliflower', 'kale', 'tomato', 'cabbage']
 console.log(plants);
 
 
 console.log("\nAfter Pop");
-console.log("Removed Element is :- "+plants.pop()); //Removes last element of the array
+console.log("Removed Element is :- " + plants.pop()); //Removes last element of the array
 console.log(plants);
 
 
@@ -273,12 +273,12 @@ console.log(plants);
 //The shift() method removes the first element from an array and returns that removes element. This method changes the length of the array
 
 console.log("\nBefore Shift");
-const plants1 = ['cauliflower' , 'kale' , 'tomato' , 'cabbage']
+const plants1 = ['cauliflower', 'kale', 'tomato', 'cabbage']
 console.log(plants1);
 
 
 console.log("\nAfter Shift");
-console.log("Removed Element is :- "+plants1.shift()); //Removes last element of the array
+console.log("Removed Element is :- " + plants1.shift()); //Removes last element of the array
 console.log(plants1);
 
 
@@ -289,12 +289,12 @@ console.log("\n\nUsing Splice Examples\n");
 //Syntax - const 'variablename' = 'arrayname'.splice ('kon index e kaj hobe setarindex number','delete korte chaile 1 nahole 0' , 'kichu add korte chaile seta')
 //Adds and/or removes elements from an array.
 
-const month = ['Jan','March','April','June','July'];
+const month = ['Jan', 'March', 'April', 'June', 'July'];
 
 //Q-1 ---> Add Dec at the end of the list---//
 console.log("\nAdd Dec at the end of the list");
 
-const newmonth = month.splice(5,0,"Dec"); 
+const newmonth = month.splice(5, 0, "Dec");
 /*In place of "5" we can write "arrayname.length" for insertion or deletion at the length */
 console.log(month);
 
@@ -304,7 +304,7 @@ console.log(month);
 
 //Q-2 ---> Update March to November---//
 console.log("\nUpdate March to November");
-const updatemonth = month.splice(1,1,"November"); 
+const updatemonth = month.splice(1, 1, "November");
 /*First 1 --> Index 1
   Second 1 --> Because I want to delete
   "November" --> After deletion new string to be entered
@@ -317,12 +317,11 @@ console.log(month);
 console.log("\nUpdate June to May by finding the index number");
 
 const indexOfMonth = month.indexOf("June");
-if(indexOfMonth != -1)
-{
-    const updatemonth2 = month.splice(indexOfMonth,1,"May"); 
+if (indexOfMonth != -1) {
+    const updatemonth2 = month.splice(indexOfMonth, 1, "May");
     console.log(month);
 }
-else{
+else {
     console.log("No Such Data Found");
 }
 
@@ -332,12 +331,11 @@ else{
 console.log("\nDelete May");
 
 const indexOfMonth1 = month.indexOf("May");
-if(indexOfMonth1 != -1)
-{
-    const deleteMonth = month.splice(indexOfMonth1,1); 
+if (indexOfMonth1 != -1) {
+    const deleteMonth = month.splice(indexOfMonth1, 1);
     console.log(month);
 }
-else{
+else {
     console.log("No Such Data Found");
 }
 
@@ -345,13 +343,12 @@ else{
 //Q-5 ---> Delete More than one element
 console.log("\nDelete all elements after April");
 const indexOfMonth2 = month.indexOf("April");
-if(indexOfMonth2 != -1)
-{
-    const deleteMonthmorethanone = month.splice(indexOfMonth2,Infinity); 
+if (indexOfMonth2 != -1) {
+    const deleteMonthmorethanone = month.splice(indexOfMonth2, Infinity);
     //It will delete every element after "April"
     console.log(month);
 }
-else{
+else {
     console.log("No Such Data Found");
 }
 
@@ -366,10 +363,10 @@ else{
     }[, thisArg]);
  */
 
-    //Returns a new array containing the results of calling a function on every element in this array 
+//Returns a new array containing the results of calling a function on every element in this array 
 
 
-const arrayA = [1,4,9,16,25];
+const arrayA = [1, 4, 9, 16, 25];
 
 //Q-1 ---> Num > 9 (Show only boolean values)
 /* 
@@ -416,7 +413,7 @@ console.log(newArr);
 
 console.log("\nFind the square root of each element in an array");
 
-let arrA = [25,36,49,64,81]
+let arrA = [25, 36, 49, 64, 81]
 
 let arrSqr = arrA.map((curElem) => {
     return Math.sqrt(curElem);
@@ -429,10 +426,10 @@ console.log(arrSqr);
 
 console.log("\nMultiply Each element with 2 and return only those elements which are greater than 10");
 
-let arrB = [2,3,4,6,8];
+let arrB = [2, 3, 4, 6, 8];
 
 let arrMul = arrB.map((curElem) => {
-    return curElem*2 ;
+    return curElem * 2;
 }).filter((curElem) => {
     return curElem > 10;
 })
@@ -459,11 +456,11 @@ The reducer function takes four arguments:-
 
 console.log("\nusing reduce() method");
 
-let arrC = [5,6,2];
+let arrC = [5, 6, 2];
 
 let arrSum = arrC.reduce((accumulator, curElem, index, arr) => {
-        return accumulator += curElem;
-}, 7 ) //It is Initial Value...7 is already stored in accumulator. While summing, 7 will be automatically added with 5,6,2. 
+    return accumulator += curElem;
+}, 7) //It is Initial Value...7 is already stored in accumulator. While summing, 7 will be automatically added with 5,6,2. 
 
 console.log(arrSum);
 
@@ -475,16 +472,16 @@ console.log(arrSum);
 
 console.log("\nArray before flatten");
 const arr5 = [
-    ['zone1','zone2'],
-    ['zone3','zone4'],
-    ['zone5','zone6'],
-    ['zone7','zone8']
+    ['zone1', 'zone2'],
+    ['zone3', 'zone4'],
+    ['zone5', 'zone6'],
+    ['zone7', 'zone8']
 ];
 console.log(arr5);
 
 console.log("\nArray after flatten");
 
-let flatarr = arr5.reduce((accum,currVal) => {
+let flatarr = arr5.reduce((accum, currVal) => {
     return accum.concat(currVal);
 })
 
