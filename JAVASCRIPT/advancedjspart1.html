@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: linear-gradient(125deg,cadetblue,white);
+
+        }
+
+        #parent,
+        #parent1 ,#parent2{
+            width: 25rem;
+            height: 20rem;
+            background-color: greenyellow;
+            display: grid;
+            place-items: center;
+            border: 5px solid green;
+            cursor: pointer;
+
+        }
+
+        #child,
+        #child1 , #child2{
+            width: 15rem;
+            height: 10rem;
+            background-color: rgb(27, 148, 247);
+            border: 5px solid rgb(15, 72, 119);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Normal Way (Event Bubbling) </h1>
+    <div class="parent" id="parent">
+        <div class="child" id="child"></div>
+    </div>
+    <br><br>
+
+
+    <h1>Stop Propagation </h1>
+    <div class="parent1" id="parent1">
+        <div class="child1" id="child1"></div>
+    </div>
+    <br><br>
+
+
+    <h1>Event Capturing</h1>
+    <div class="parent2" id="parent2">
+        <div class="child2" id="child2"></div>
+    </div>
+    <br><br>
+
+
+
+
+    <script src="/advancedjspart1.js"></script>
+</body>
+
+</html>
