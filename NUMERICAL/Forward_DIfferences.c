@@ -28,7 +28,6 @@ int main()
 
     printf("    X\t\t    Y\t\t  DelY\t\t  ");
 
-
     for (i = 2; i <= n - 1; i++)
     {
         printf("Del%dY\t\t", i);
